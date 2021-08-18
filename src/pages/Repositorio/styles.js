@@ -17,6 +17,11 @@ export const Container = styled.div`
   padding: 30px;
   margin: 80px auto;
 
+  h3{
+    font-size: 15px;
+    color:#0D2636;
+    margin-top: 10px;
+  }
 
 `;
 
@@ -44,9 +49,7 @@ export const Owner = styled.header`
     line-height: 1.4;
     max-width: 400px;
 
-  }  
-
-
+  }
 `;
 
 export const BacButton = styled(Link)`
@@ -145,4 +148,27 @@ export const PageActions = styled.div`
 
   }
 
+`;
+
+export const StateFilter = styled.div`
+  margin-top: 10px;
+
+  button{
+    outline:0;
+    border:0;
+    background: #222;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 4px;
+
+    &:disabled{
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    & + button{
+      margin-left: 10px;
+    }
+
+  }
 `;
